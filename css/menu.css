@@ -5,9 +5,6 @@ header{
     align-items: center;
     position: relative;
 }
-.logo{
-    margin: 50px;
-}
 .logo span{
     display: none;
 }
