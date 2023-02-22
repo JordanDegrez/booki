@@ -1,0 +1,49 @@
+*{
+    font-family: 'Raleway_regular';
+    line-height: 1;
+}
+body, header{
+    padding: 0;
+    margin: 0;
+}
+.container1600{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/**barre de recherche**/
+.search-bar{
+    display: flex;
+}
+.search-bar span{
+    border-radius: 15px 0 0 15px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-color: var(--gris);
+    background-image: url(../elements/medias/icone_map.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.search-bar input[type="submit"]{
+    background: var(--bleu-fonce);
+    border-radius: 0 15px 15px 0;
+    border: none;
+    font-family: 'Raleway_bold';
+    color: var(--blanc);
+    padding: 15px;
+    font-size: 18px;
+}
+.search-bar input[type="submit"]:hover{
+    background: var(--noir);
+}
+.search-bar input[type="search"]{
+    border: solid 1px var(--gris);
+    width: 300px;
+    padding: 10px;
+}
+.search-bar input[type="search"]::placeholder, .search-bar input[type="search"]:focus, .search-bar input[type="search"]{
+    font-family: 'Raleway_bold';
+    color: var(--noir);
+    font-size: 18px;
+}
