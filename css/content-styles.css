@@ -47,3 +47,33 @@ body, header{
     color: var(--noir);
     font-size: 18px;
 }
+
+/**filtres**/
+#filtres{
+    display: flex;
+    align-items: center;
+}
+.filtre input{
+    font-family: 'Raleway_bold';
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    border: solid 2px var(--gris);
+    padding: 10px 15px;
+    font-size: 17px;
+    border-radius: 25px;
+    background-color: var(--blanc);
+}
+.filtre input:focus, .filtre input:target{
+    background-color: var(--bleu-clair);
+}
+#economique::before{
+    content: '';
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-image: url(../elements/medias/icone_economique.svg);
+    background-size: contain;
+}

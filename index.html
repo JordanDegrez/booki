@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Booki</title>
 </head>
 <!--menu top-->
@@ -28,5 +29,14 @@
         <input type="search" placeholder="Marseille, France">
         <input type="submit" value="Rechercher">
     </div>
+
+    <!--filtres-->
+    <section id="filtres">
+        <p>Filtre</p>
+        <div class="filtre">
+            <span id="economique"></span>
+            <input type="button" id="background-filtres economique" onclick="stayFocus()" value="Économique">
+        </div>
+    </section>
 </body>
 </html>
