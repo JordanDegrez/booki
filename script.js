@@ -1,3 +1,6 @@
-function stayFocus() {
-    document.getElementById('background-filtres').style.cssText = 'background-color: var(--bleu-clair);';
-}
+const btn = document.getElementsByClassName('background-filtres');
+
+function StayFocus() {
+  btn.style.backgroundColor = 'salmon';
+  btn.style.color = 'white';
+};

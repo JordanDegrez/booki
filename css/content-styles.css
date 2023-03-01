@@ -53,7 +53,7 @@ body, header{
     display: flex;
     align-items: center;
 }
-.filtre input{
+.filtre{
     font-family: 'Raleway_bold';
     display: flex;
     align-items: center;
@@ -65,8 +65,14 @@ body, header{
     border-radius: 25px;
     background-color: var(--blanc);
 }
-.filtre input:focus, .filtre input:target{
+.filtre:focus, .filtre:target{
     background-color: var(--bleu-clair);
+}
+.filtre .background-filtres{
+    border: none;
+    background: none;
+    font-size: 17px;
+    font-family: 'Raleway_bold';
 }
 #economique::before, #familial::before, #romantique::before, #pepites::before{
     content: '';
