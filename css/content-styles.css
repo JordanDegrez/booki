@@ -68,7 +68,7 @@ body, header{
 .filtre input:focus, .filtre input:target{
     background-color: var(--bleu-clair);
 }
-#economique::before{
+#economique::before, #familial::before, #romantique::before, #pepites::before{
     content: '';
     display: block;
     width: 22px;
@@ -76,4 +76,13 @@ body, header{
     background-repeat: no-repeat;
     background-image: url(../elements/medias/icone_economique.svg);
     background-size: contain;
+}
+#familial::before{
+    background-image: url(../elements/medias/icone_economique.svg);
+}
+#romantique::before{
+    background-image: url(../elements/medias/icone_economique.svg);
+}
+#pepites::before{
+    background-image: url(../elements/medias/icone_pepites.svg);
 }
