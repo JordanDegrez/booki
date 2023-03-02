@@ -26,6 +26,7 @@ body, header{
     background-position: center;
 }
 .search-bar input[type="submit"]{
+    cursor: pointer;
     background: var(--bleu-fonce);
     border-radius: 0 15px 15px 0;
     border: none;
@@ -60,6 +61,7 @@ body, header{
     font-size: 18px;
 }
 .filtre{
+    cursor: pointer;
     font-family: 'Raleway_bold';
     display: flex;
     align-items: center;
@@ -126,3 +128,65 @@ body, header{
 }
 
 /**hébergements**/
+#hebergements{
+    background-color: var(--gris);
+    border-radius: 15px;
+    padding: 30px;
+    width: calc(70% - 10px);
+}
+h2{
+    font-size: 22px;
+    font-family: 'Raleway_bold';
+}
+.hebergements-articles{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 0;
+    justify-content: space-between;
+}
+.hebergements-articles article{
+    width: 30%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blanc);
+    border-radius: 20px;
+}
+.hebergements-articles article img{
+    object-fit: cover;
+    max-height: 124px;
+    border-radius: 10px 10px 0 0;
+    border: solid 4px var(--blanc);
+}
+.info-article{
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+h3{
+    font-size: 19px;
+    font-family: 'Raleway_bold';
+}
+.info-article p{
+    font-size: 14px;
+    font-family: 'Raleway_semibold';
+}
+.global-etoiles{
+    display: flex;
+    gap: 5px;
+}
+.etoile-bleu{
+    display: block;
+    height: 14px;
+    width: 14px;
+    background-image: url(../elements/medias/icone_etoile_bleu.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.etoile-grise{
+    display: block;
+    height: 14px;
+    width: 14px;
+    background-image: url(../elements/medias/icone_etoile_grise.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
