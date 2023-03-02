@@ -52,6 +52,12 @@ body, header{
 #filtres{
     display: flex;
     align-items: center;
+    gap: 10px;
+    margin: 20px 0 10px;
+}
+#filtres p{
+    font-family: 'Raleway_bold';
+    font-size: 18px;
 }
 .filtre{
     font-family: 'Raleway_bold';
@@ -64,6 +70,7 @@ body, header{
     font-size: 17px;
     border-radius: 25px;
     background-color: var(--blanc);
+    transition: all .3s;
 }
 .filtre:focus, .filtre:target{
     background-color: var(--bleu-clair);
@@ -73,6 +80,10 @@ body, header{
     background: none;
     font-size: 17px;
     font-family: 'Raleway_bold';
+}
+.filtre:hover{
+    transform: scale(1.05);
+    transition: all .3s;
 }
 #economique::before, #familial::before, #romantique::before, #pepites::before{
     content: '';
@@ -92,3 +103,26 @@ body, header{
 #pepites::before{
     background-image: url(../elements/medias/icone_pepites.svg);
 }
+
+/**informations**/
+#informations{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+#informations p{
+    font-size: 16px;
+}
+#infos{
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: solid 2px var(--gris);
+    border-radius: 50%;
+    background-image: url(../elements/medias/icone_infos.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+}
+
+/**hébergements**/
