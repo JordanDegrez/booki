@@ -299,3 +299,24 @@ h3{
 #activites-articles article h3{
     margin: 15px;
 }
+
+/**footer**/
+footer{
+    background-color: var(--gris);
+    max-width: none !important;
+}
+footer nav{
+    display: flex;
+}
+footer p{
+    font-size: 18px;
+    font-family: 'Raleway_bold';
+}
+footer li{
+    list-style: none;
+}
+footer a{
+    text-decoration: none;
+    line-height: 1.8;
+    color: var(--noir);
+}
