@@ -141,6 +141,27 @@ body, header{
     padding: 30px;
     width: 65%;
 }
+#hebergements button{
+    font-size: 18px;
+    font-family: 'Raleway_bold';
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+    margin: 30px 0 0;
+}
+#hebergements button::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: var(--noir);
+    margin-top: 2px;
+    transition: all .3s;
+}
+#hebergements button:hover::after{
+    transition: all .3s;
+    width: 100%;
+}
 #populaires{
     width: 25%;
 }
@@ -188,8 +209,8 @@ h2{
     object-fit: cover;
     min-height: 144px;
     max-height: 144px;
-    max-width: 124px;
-    min-width: 124px;
+    max-width: 30%;
+    min-width: 30%;
     border-radius: 10px 0 0 10px;
     border: solid 4px var(--blanc);
 }
@@ -247,4 +268,34 @@ h3{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+/**activités**/
+#activites-articles{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#activites-articles article{
+    cursor: pointer;
+    width: 22%;
+    -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    transition: all .3s;
+}
+#activites-articles article:hover{
+    transition: all .3s;
+    transform: scale(1.05);
+}
+#activites-articles article img{
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    min-height: 380px;
+    max-height: 380px;
+    min-width: 100%;
+    max-width: 100%;
+}
+#activites-articles article h3{
+    margin: 15px;
 }
