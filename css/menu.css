@@ -1,4 +1,12 @@
 header{
+    position: fixed;
+    z-index: 9;
+    background-color: var(--blanc);
+    height: 100px;
+    width: 100%;
+    max-width: 1600px;
+}
+header section{
     display: flex;
     width: 100%;
     justify-content: space-between;
